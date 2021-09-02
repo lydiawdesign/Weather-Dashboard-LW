@@ -36,3 +36,5 @@ THEN I am again presented with current and future conditions for that city
 
 
 ```
+
+API used: https://openweathermap.org/api/one-call-api

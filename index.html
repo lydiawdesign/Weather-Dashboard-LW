@@ -5,13 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lydia's Weather Dashboard</title>
-
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="reset" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <header class='text-white text-center p-3' id='gradient'>Weather Dashboard</header>
 
+    <main>
+        <div>
+            <form>
+                <h2>Search for a City:</h2>
+                <input type="text">
+                <button class='btn btn-primary' type="submit">Search</button>
+            </form>
+            <div>Placeholder for previous searches</div>
+        </div>
+        <div>
+            <h2>Placeholder for current city searched</h2>
+            <div>placeholder for results of searched city</div>
+        </div>
+        <div>
+            <h2>placeholder for 5 day forecast</h2>
+            <div>placeholder for 5 day forecast results</div>
+        </div>
+    </main>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
