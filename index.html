@@ -15,27 +15,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class='text-white text-center p-3' id='gradient'>Weather Dashboard</header>
+    <header class='text-white text-center p-3 display-6' id='gradient'>Weather Dashboard</header>
 
-    <main>
-        <div>
-            <form>
-                <h2>Search for a City:</h2>
-                <input type="text">
-                <button class='btn btn-primary' type="submit">Search</button>
-            </form>
-            <div>Placeholder for previous searches</div>
-        </div>
-        <div>
-            <h2>Placeholder for current city searched</h2>
-            <div>placeholder for results of searched city</div>
-        </div>
-        <div>
-            <h2>placeholder for 5 day forecast</h2>
-            <div>placeholder for 5 day forecast results</div>
+    <main class="container-fluid">
+        <div class= "row">
+            <div class= "col">
+                <form class="p-3">
+                    <h2>Search for a City:</h2>
+                    <input class="input-group input-group-sm mb-3" class="form-control" placeholder="Type a city..." type="text">
+                    <button class='btn btn-outline-primary' type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col">
+                <div class="border border-primary border-2 row">
+                    <h2>Placeholder for current city searched</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Temp:</li>
+                        <li class="list-group-item">Wind:</li>
+                        <li class="list-group-item">Humidity:</li>
+                        <li class="list-group-item">UV Index:</li>
+                    </ul>
+                </div>
+            </div>
+        </div>  
+        <div class='row'>
+            <div class='col'>Placeholder for previous searches</div>
+            <div class= "col">
+                <h2>placeholder for 5 day forecast</h2>
+                <div class = "d-flex p-2">placeholder for 5 day forecast results</div>
+            </div>
         </div>
     </main>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
