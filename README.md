@@ -1,7 +1,7 @@
 # Weather-Dashboard-LW
 
-Link to Repo: 
-Link to Live Site: 
+Link to Repo: https://github.com/lydiawdesign/Weather-Dashboard-LW
+Link to Live Site: https://lydiawdesign.github.io/Weather-Dashboard-LW/
 
 ## User Story
 
@@ -23,6 +23,7 @@ WHEN I view current weather conditions for that city
 THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
 
 
+
 WHEN I view the UV index
 THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
 
@@ -38,3 +39,13 @@ THEN I am again presented with current and future conditions for that city
 ```
 
 API used: https://openweathermap.org/api/one-call-api
+
+---
+
+Ran out of time to/not sure how to : 
+- get the search bar linked
+- show the previous cities searched
+- complete the 5 day forecast
+- anything with local storage
+- add the description
+- UV index and the color indicator
