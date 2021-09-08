@@ -7,42 +7,88 @@
     <title>Lydia's Weather Dashboard</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="reset" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class='text-white text-center p-3 display-6' id='gradient'>Weather Dashboard</header>
+    <h2 id='current-date'></h2>
 
     <main class="container-fluid">
         <div class= "row m-5">
             <div class= "col">
                 <form class="p-3" id="searchCity">
                     <h2>Search for a City:</h2>
-                    <input id="cityInput" class="input-group input-group-sm mb-3" class="form-control" placeholder="Type a city..." type="text">
+                    <input type="text" name="city" id="searchSubmit" class="input-group input-group-sm mb-3" class="form-control" placeholder="Type a city..." type="text">
                     <button class='btn btn-outline-primary' type="submit">Search</button>
                 </form>
+                <table class = 'box'id ="pastSearches">
+                            <!-- Placeholder for previous searches -->
+                    <tr></tr>
+                </table>    
             </div>
             <div class="col">
                 <div id = "currentWeather" class="border border-primary border-2 row">
                     <h2 id="cityResult">Placeholder for current city searched</h2>
+                    <div id="icon"></div>
                     <ul class="list-group">
-                        <li class="list-group-item">Temp:</li>
-                        <li class="list-group-item">Wind:</li>
-                        <li class="list-group-item">Humidity:</li>
-                        <li class="list-group-item">UV Index:</li>
+                        <li class="list-group-item" id="temp"></li>
+                        <li class="list-group-item" id="wind"></li>
+                        <li class="list-group-item" id="humidity"></li>
+                        <li class="list-group-item" id="description">Description:</li>
                     </ul>
                 </div>
             </div>
         </div>  
-        <div class='row'>
-            <div id ="pastSearches" class='col'>Placeholder for previous searches</div>
-            <div class= "col">
-                <h2 id= "forecast">placeholder for 5 day forecast</h2>
-                <div id = "fiveDayForecast" class = "d-flex p-2">placeholder for 5 day forecast results</div>
+        <div class='container-md'>
+            <div class= "content">
+                <h2 id= "forecast">5-Day Forecast</h2>
+                <div class="columns">
+                  <div class="column card">
+                    <div id="day1" class="card-content">
+                      <h3 id="date1"></h3>
+                      <div id="icon1"></div>
+                      <h4 id="temp1"></h4>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column card">
+                      <div id="day2" class="card-content">
+                        <h3 id="date2"></h3>
+                        <div id="icon2"></div>
+                        <h4 id="temp2"></h4>
+                      </div>
+                  </div>
+
+                  <div class="columns">
+                    <div class="column card">
+                      <div id="day3" class="card-content">
+                        <h3 id="date3"></h3>
+                        <div id="icon3"></div>
+                        <h4 id="temp3"></h4>
+                      </div>
+                  </div>
+
+                  <div class="columns">
+                    <div class="column card">
+                      <div id="day4" class="card-content">
+                        <h3 id="date4"></h3>
+                        <div id="icon4"></div>
+                        <h4 id="temp4"></h4>
+                      </div>
+                  </div>
+
+                  <div class="columns">
+                    <div class="column card">
+                      <div id="day5" class="card-content">
+                        <h3 id="date5"></h3>
+                        <div id="icon5"></div>
+                        <h4 id="temp5"></h4>
+                      </div>
+                  </div>
             </div>
         </div>
     </main>
